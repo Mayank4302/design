@@ -1,0 +1,349 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+
+.leth video{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+.trk img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+}
+.fim img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+}
+.lc video{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+}
+.rf video{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+}
+.fvid video{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+
+}
+
+ .btn1 button{
+    height: 80px;
+    width:600px;
+    border: 2px solid white;
+    border-radius: 100px;
+    position:relative;
+    color: white;
+    overflow: hidden;
+    font-weight:600;
+    margin-bottom: 100px;
+ }
+ .btn1 button::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background-color: white;
+    left: 0;
+    top:0;
+    transform: scale(0) ;
+    transition: all ease 1s;
+    
+ }
+ .default-text,.new-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.9s, opacity 1s;
+ }
+ .default-text{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+ }
+ .new-text{
+    opacity: 0;
+    transform: translate(-50%,150%);
+ }
+ .btn1 button:hover .default-text{
+    opacity: 0;
+    transform: translate(-50%,-160%);
+ }
+ .btn1 button:hover .new-text{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+ }
+ .btn1 button:hover::before{
+    transform: scale(30);
+    
+ }
+ .btn1 button:hover{
+    color: black;
+ }
+
+
+
+
+
+
+
+ .btn-2 button{
+    height: 80px;
+    width:200px;
+    border: 2px solid black;
+    border-radius: 50px;
+    position:relative;
+    color:blac7;
+    overflow: hidden;
+    font-weight:600;
+    margin-bottom: 100px;
+    font-size: 25px;
+ }
+ .btn-2 button::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 50px;
+    background-color: black;
+    left: 0;
+    top:0;
+    transform: scale(0) ;
+    transition: all ease 0.5s;
+}
+.btnn-2,.btnd-2{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: transform 0.5s, opacity 0.5s;
+}
+ .btnd-2{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+ }
+ .btnn-2{
+    opacity: 0;
+    transform: translate(-50%,150%);
+ }
+
+
+.btn-2 button:hover .btnd-2{
+    opacity: 0;
+    transform: translate(-50%,-150%);
+    
+}
+.btn-2 button:hover .btnn-2{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+button:hover{
+    color: white;
+}
+.btn-2 button:hover::before{
+    transform: scale(9);
+}
+.form-container .yorname,.yormail{
+   color: rgb(255, 255, 255);
+   background-color: black;
+   font-size: 40px;
+   border:none;
+   border-bottom: 4px solid white;
+   margin-top: 8px;
+   
+}
+.yormail{
+   margin-top: 24px;
+}
+
+input::placeholder{
+   color: #fbfafa;
+}
+
+.nbt{
+   height: 80px;
+   width: 220px;
+   border: 4px solid white;
+   background: transparent;
+   border-radius: 50px;
+   position: relative;
+   overflow: hidden;
+   
+}
+.nbt::before{
+   content: "";
+   background-color: #fbfafa;
+   height: 80px;
+   width: 80px;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 50px;
+   z-index: 0;
+   transform: scale(0);
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.dtxt,.ntxt{
+   position: absolute;
+   transform: translate(-50%,-50%);
+   left: 50%;
+   top: 50%;
+   transition: transform 0.5s,opacity 0.5s;
+}
+.dtxt{
+   opacity: 1;
+   transform: translate(-50%,-50%);
+}
+.ntxt{
+   opacity: 0;
+   transform: translate(-50%,150%);
+}
+.nbt:hover .dtxt{
+   opacity: 0;
+   transform: translate(-50%,-150%);
+}
+.nbt:hover .ntxt{
+   opacity: 1;
+   transform: translate(-50%,-50%);
+}
+.nbt:hover::before{
+   transform: scale(19);
+}
+.nbt:hover{
+   color: black;
+}
+.nws{
+ font-family:   "Saol Display","serif";
+ font-weight: 100;
+}
+.pg1 .head{
+ font-family:   "Saol Display","serif";
+ font-weight: 100;
+
+}
+.lpbtn{
+   position: relative;
+   overflow: hidden;
+   height: 100px ;
+   width: 250px;
+  left: 30%;
+  border-radius: 50px;
+  border: 2px solid black;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+.lpbtn::before{
+   content: "";
+   position: absolute;
+   height: 100px;
+   width: 80px;
+   background-color: black;
+   left: 0;
+   top: 0;
+   border-radius: 200px;
+   transform: scale(0);
+   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s ;
+  z-index: -8;
+
+}
+
+ .lpdt,.lpnt{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: transform 0.5s, opacity 0.5s;
+  color: black;
+
+}
+.lpdt{
+   opacity: 1;
+   transform: translate(-50%,-50%);
+}
+.lpnt{
+   opacity: 0;
+   transform: translate(-50%,150%);
+}
+.lpbtn:hover .lpdt{
+   opacity: 0;
+   transform: translate(-50%,-150%);
+   color: white;
+
+}
+.lpbtn:hover .lpnt{
+   opacity: 1;
+   transform: translate(-50%,-50%);
+   color: white;
+
+}
+.lpbtn:hover::before{
+   transform: scale(6);
+}
+.foot-det  h3{
+   transition:border-bottom 0.5s;
+}
+
+.foot-det  h3:hover{
+   border-bottom: 2px solid black;
+   cursor: pointer;
+}
+.blkt-det {
+   margin-top: 20px;
+   height: 130px;
+   background: linear-gradient( to right,#8E7730,#129C85,#2FA895,#428073);
+   white-space: nowrap;
+   overflow: hidden;
+  padding-top: 30px;
+  
+}
+.blkt-txt{
+   white-space: nowrap;
+   display: flex;
+   gap: 20px;
+  animation: anime 20s linear  infinite ;
+   /* animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 1.0); */
+}
+
+
+
+.blkt-txt img,.blkt-txt h3{
+   display: inline-block;
+   width: 185px;
+   margin-right: 20px;
+   font-size: 35px;
+   color: #fbfafa;
+ 
+}
+
+@keyframes anime {
+   0%{
+      transform: translateX(0%);
+   }
+   100%{
+      transform: translateX(-100% );
+   }
+
+}
+
+.first-dis{
+ font-family:   "Saol Display","serif";
+
+}
+.head-1{
+ font-family:   "Saol Display","serif";
+
+}
+
+
+
+
+
+
+
+
+
+
